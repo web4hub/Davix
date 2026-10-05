@@ -1,4 +1,4 @@
-# Davix
+# [Davix](http://info.cern)
 
 [![build status](https://gitlab.cern.ch/dmc/davix/badges/devel/pipeline.svg)](https://gitlab.cern.ch/dmc/davix/commits/devel)
 
@@ -27,7 +27,7 @@ Davix provides a shared library as well as a few command line tools. The library
 
 Here are some example invocations of the command-line tools.
 
-```
+```ch
 # upload a file using a VOMS proxy
 davix-put myfile https://someserver/dir/myfile -E /tmp/x509up_u1000
 # download a file from an Amazon S3 bucket
@@ -43,7 +43,7 @@ davix-ls https://someserver/dir
    * openssl-devel
 
 2. Compile:
-```
+```bash
 git clone https://github.com/cern-fts/davix.git
 cd davix
 git submodule update --recursive --init
@@ -53,7 +53,7 @@ make
 ```
 
 You can now try running an example command:
-```
+```cmd
 ./src/tools/davix-get https://www.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.0.1
 ```
 
