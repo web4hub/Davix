@@ -27,7 +27,7 @@ Davix provides a shared library as well as a few command line tools. The library
 
 Here are some example invocations of the command-line tools.
 
-```ch
+```bash
 # upload a file using a VOMS proxy
 davix-put myfile https://someserver/dir/myfile -E /tmp/x509up_u1000
 # download a file from an Amazon S3 bucket
@@ -53,7 +53,7 @@ make
 ```
 
 You can now try running an example command:
-```cmd
+```bash
 ./src/tools/davix-get https://www.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.0.1
 ```
 
